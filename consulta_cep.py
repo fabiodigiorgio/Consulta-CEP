@@ -5,8 +5,22 @@ from PIL import Image
 
 st.set_page_config(page_title="Consulta Área Atendimento", layout="centered")
 
-# Dados embutidos do ccep.xlsx
-dados_embutidos = [{'Cidade': 'São Paulo', 'CEP Inicial': '01000-000', 'CEP Final': '05999-999'}, {'Cidade': 'Guarulhos', 'CEP Inicial': '07000-000', 'CEP Final': '07399-999'}, {'Cidade': 'Barueri', 'CEP Inicial': '06400-000', 'CEP Final': '06499-999'}, {'Cidade': 'Jundiaí', 'CEP Inicial': '13200-000', 'CEP Final': '13299-999'}, {'Cidade': 'Santo André', 'CEP Inicial': '09000-000', 'CEP Final': '09299-999'}, {'Cidade': 'São Bernardo do Campo', 'CEP Inicial': '09600-000', 'CEP Final': '09899-999'}, {'Cidade': 'São Caetano do Sul', 'CEP Inicial': '09500-000', 'CEP Final': '09599-999'}, {'Cidade': 'Louveira', 'CEP Inicial': '13290-000', 'CEP Final': '13299-999'}, {'Cidade': 'Franco da Rocha', 'CEP Inicial': '07800-000', 'CEP Final': '07899-999'}, {'Cidade': 'Atibaia', 'CEP Inicial': '12940-000', 'CEP Final': '12949-999'}, {'Cidade': 'Alphaville', 'CEP Inicial': '06540-000', 'CEP Final': '06549-999'}]
+# Dados embutidos do ccep.xlsx com adição de Osasco e Itaquaquecetuba
+dados_embutidos = [
+    {'Cidade': 'São Paulo', 'CEP Inicial': '01000-000', 'CEP Final': '05999-999'},
+    {'Cidade': 'Guarulhos', 'CEP Inicial': '07000-000', 'CEP Final': '07399-999'},
+    {'Cidade': 'Barueri', 'CEP Inicial': '06400-000', 'CEP Final': '06499-999'},
+    {'Cidade': 'Jundiaí', 'CEP Inicial': '13200-000', 'CEP Final': '13299-999'},
+    {'Cidade': 'Santo André', 'CEP Inicial': '09000-000', 'CEP Final': '09299-999'},
+    {'Cidade': 'São Bernardo do Campo', 'CEP Inicial': '09600-000', 'CEP Final': '09899-999'},
+    {'Cidade': 'São Caetano do Sul', 'CEP Inicial': '09500-000', 'CEP Final': '09599-999'},
+    {'Cidade': 'Louveira', 'CEP Inicial': '13290-000', 'CEP Final': '13299-999'},
+    {'Cidade': 'Franco da Rocha', 'CEP Inicial': '07800-000', 'CEP Final': '07899-999'},
+    {'Cidade': 'Atibaia', 'CEP Inicial': '12940-000', 'CEP Final': '12949-999'},
+    {'Cidade': 'Alphaville', 'CEP Inicial': '06540-000', 'CEP Final': '06549-999'},
+    {'Cidade': 'Osasco', 'CEP Inicial': '06000-001', 'CEP Final': '06299-999'},
+    {'Cidade': 'Itaquaquecetuba', 'CEP Inicial': '08570-001', 'CEP Final': '08599-999'}
+]
 
 df_ceps = pd.DataFrame(dados_embutidos)
 
